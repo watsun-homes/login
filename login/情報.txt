@@ -1,0 +1,25 @@
+CREATE DATABASE register_func DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE TABLE register_func. users (
+user_id INT( 5 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+username VARCHAR( 25 ) NOT NULL ,
+email VARCHAR( 35 ) NOT NULL ,
+password VARCHAR( 60 ) NOT NULL ,
+UNIQUE (email)
+);
+
+define('DB_NAME', 'homewatsun16_gp5do');
+define('DB_USER', 'homewatsun16_687');
+define('DB_PASSWORD', 'h1348g217');
+define('DB_HOST', 'mysql5029.xserver.jp');
+
+
+define('DB_NAME', 'ここにデータベース名を入力');
+define('DB_USER', 'ここにユーザー名を入力');
+define('DB_PASSWORD', 'ここにパスワードを入力');
+define('DB_HOST', 'ここにホスト名を入力');
+
+
+$mysqli = new mysqli("$host", "$username", "$password","$dbname");
+
+
+Access denied for user 'root'@'sv5282.xserver.jp' (using password: YES) in 
